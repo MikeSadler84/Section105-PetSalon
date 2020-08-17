@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Register</title>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <h1>The Fashion Pet</h1>
+    </header>
+
+    <section>
+        <nav id="menu1" class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="register.html">Register</a>
+        </nav>
+
+    </section>
+    <div class="petRegistration">
+        <h2>Pet Registration Form</h2>
+    </div>
+    <main id="main" class="form-size-wrap" class="form-size-mobile-wrap">
+        <form action="" class="main">
+            <div class="form-head">
+                <h3>Please fill in all of the information to register your pet.</h3>
+            </div>
+            <p>
+                <label for="name">Pet name: </label>
+                <input type="text" name="name" id="petName" placeholder="Pet Name">
+            </p>
+            <p>
+                <label for="age">Pet age: </label>
+                <input type="number" name="age" id="petAge" placeholder="Pet Age">
+            </p>
+            <p>
+                <label for="breed">Pet breed: </label>
+                <input type="text" name="breed" id="petBreed" placeholder="Pet Breed">
+            </p>
+            <p>
+                <label for="petType">Pet Type: </label>
+                <select name="Pet Type" id="petType">
+                    <option value="" disabled selected> ------------- Pet Type ------------- </option>
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Bird">Bird</option>
+                </select>
+            </p>
+            <p>
+                <label for="gender">Pet gender: </label>
+                <input type="text" name="gender" id="petGender" placeholder="Pet Gender">
+            </p>
+            <p>
+                <label for="services">Pet services: </label>
+                <select name="services" id="petService">
+                    <option value="" disabled selected> -------- Select a Service -------- </option>
+                    <option value="De-clawing">De-clawing</option>
+                    <option value="Grooming">Grooming</option>
+                    <option value="Vaccines">Vaccines</option>
+                    <option value="Nail cut">Nail Cutting</option>
+                    <option value="Neuter">Neuter or Spaying</option>
+                    <option value="Full Service">Full Service</option>
+                </select>
+            </p>
+            <p>
+                <label for="ownerName">Owner name: </label>
+                <input type="text" name="ownerName" id="ownerName" placeholder="Owner Name">
+            </p>
+            <p>
+                <label for="phoneNumber">Phone number: </label>
+                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+            </p>
+            <p class = "newCustomer">
+                <label for="services">Customer type: </label>
+                <select name="services" id="customerType">
+                    <option value="" disabled selected> -------- Customer Status -------- </option>
+                    <option value="New Customer">New Customer</option>
+                    <option value="Registered">Registered</option>
+                </select>
+            </p>
+            <div class="register-button">
+            <input type="button" value="Register" onclick="register();">
+            </div>
+        </form>
+    </main>
+    <div id="pets-section-header">
+        
+    </div>
+    
+    <!-- <section id="pets-section">
+    Works with directory.js
+
+    </section> -->
+    <section class="container form-inline">
+        <input class="form-control" type="search" name="search" id="petSearch">
+        <button class ="btn btn-primary" onclick="searchPet();">Search</button>
+    </section>
+
+    <section class="container table-container">
+    <table class="table">
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Breed</th>
+            <th>Type</th>
+            <th>Gender</th>
+            <th>Service</th>
+            <th>Owner Name</th>
+            <th>Phone Number</th>
+            <th>Customer Status</th>
+        </thead>
+        <tbody id="petTable">
+
+        </tbody>
+    </table>
+</section>
+    <div id="msg">
+
+    </div>
+</div>
+    <footer>
+        <div id="info">
+            
+        </div>
+        <p>Copyright &copy Mike Sadler 2020</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/register.js"></script>
+
+   <!-- <script src="js/directory.js"></script> -->
+   <!-- <script src="js/test5.js"></script> -->
+
+</body>
+</html>

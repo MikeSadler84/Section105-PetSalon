@@ -1,0 +1,967 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    max-width: 100%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    height: 10rem;
+    padding-top: 3rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    color: white;
+    text-shadow: 2px 2px black;
+    width: 100%;
+}
+.size-wrap{
+    max-width: 1095px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    background-color: rgb(196, 132, 13);
+    background-image: url(../img/paws.png);
+    background-size: 32%;
+    background-repeat: repeat-x;
+}
+img{
+    width: 440px;
+    height: 200px;
+}
+
+a{
+    text-decoration: none;
+}
+@media(min-width: 768px){
+h1{
+    text-align: center;
+    font-size: 5rem;
+    height: 12rem;
+    padding-top: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+header{
+    background-color: rgb(196, 132, 13);
+    background-image: url(../img/paws.png);
+    background-size: 21%;
+    background-repeat: repeat;
+}
+}
+nav{
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding: 1rem;
+}
+@media(min-width: 768px){
+    nav{
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    nav#menu2{
+        border-bottom: none;
+        text-align: center;
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    .menu a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+    #menu2 a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+}
+.menu a:hover{
+    color: rgb(122, 122, 122);
+}
+.need-groomed-wrap{
+    margin-top: 3.5rem;
+}
+
+.need-groomed-title{
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+.need-groomed{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+.need-groomed p{
+    display: block;
+    text-align: center;
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+.mobile-sub-wrap img{
+    display: flex;
+    border-radius: 50%;
+    border: 5px solid rgb(196, 132, 13);
+
+}
+.mobile-wrap img{
+    display: flex;
+    border-radius: 50%;
+    border: 5px solid rgb(196, 132, 13);
+}
+.mobile-wrap{
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mobile-sub-wrap{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tear-stain{
+    margin-bottom: 2rem;
+    width: 100%;
+    padding-left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tear-stain img{
+    width:130px;
+    height:130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.long-nails img{
+    width:130px;
+    height:130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tear-stain p{
+    line-height: 1.5;
+    text-align: center;
+    font-size: .92rem;
+    font-weight: 400;
+}
+.long-nails{
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.long-nails p{
+    line-height: 1.5;
+    text-align: center;
+    font-size: .92rem;
+    font-weight: 400;
+}
+.matted-fur{
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.matted-fur p{
+    line-height: 1.5;
+    text-align: center;
+    font-size: .92rem;
+    font-weight: 400;
+}
+.matted-fur img{
+    width:130px;
+    height:130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.need-groomed-wrap h3{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: .2rem;
+    font-size: 1.3rem;
+}
+.anal-gland{
+    width: 100%;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.anal-gland p{
+    margin: 0 0;
+    line-height: 1.5;
+    text-align: center;
+    font-size: .92rem;
+    font-weight: 400;
+}
+.anal-gland img{
+    width:130px;
+    height:130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(min-width: 768px){
+h1{
+    text-align: center;
+    font-size: 4rem;
+    height: 12rem;
+    padding-top: 3.5rem;
+    color: white;
+    text-shadow: 2px 2px black;
+    width: 100%;
+}
+img{
+    width: 565px;
+    height: 200px;
+}
+.need-groomed-wrap{
+    display: flex;
+}
+.need-groomed p{
+    font-size: 1.1rem;
+    margin-bottom: -2rem;
+}
+.need-groomed-wrap h3{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.need-groomed-wrap img{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    border: 5px solid rgb(196, 132, 13);
+    margin-left: auto;
+    margin-right: auto;
+}
+.tear-stain{
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.tear-stain p{
+    margin: 0 0;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.long-nails{
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.long-nails p{
+    margin: 0 0;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.matted-fur{
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+.matted-fur p{
+    margin: 0 0;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.anal-gland{
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+.anal-gland p{
+    margin: 0 0;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+}
+.services-title{
+    text-align: center;
+    width: 100%;
+    margin-top: 3.5rem;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    background-color: rgb(196, 132, 13);
+    padding: 2rem 0;
+    color:white;
+    text-shadow: 1px 2px black;
+}
+.service-info{
+    display: block;
+    width: 90%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.service-info2{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grooming{
+    margin-bottom: 1rem;
+}.nail-cutting{
+
+    margin-bottom: 1rem;
+}
+.shots{
+
+    margin-bottom: 1rem;
+}
+.declawing{
+
+    margin-bottom: 1rem;
+}
+.fixing{
+
+    margin-bottom: 1rem;
+}
+.full-service{
+
+    margin-bottom: 1rem;
+}
+.service-info p{
+    line-height: 1.5;
+}
+.service-info2 p{
+    line-height: 1.5;
+}
+.service-info h3{
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.service-info2 h3{
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.grooming p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.nail-cutting p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.shots p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.declawing p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.fixing p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.full-service p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+@media(min-width: 768px){
+.services-title{
+    margin-bottom: .5rem;
+    font-size: 2.5rem;
+}
+.button-wrap{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service-info{
+    display: block;
+    width: 50%;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.service-info2{
+    display: block;
+    width: 50%;
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-info h3{
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.service-info2 h3{
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.grooming{
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.grooming p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.nail-cutting{
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.nail-cutting p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.shots{
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.shots p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.declawing{
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.declawing p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.fixing{
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.fixing p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.full-service{
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.full-service p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+}
+.button{
+
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.button a{
+    
+    display: block;
+    text-decoration: none;
+    width: 300px;
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+input[type=submit]{
+    display: block;
+    border: 1.5px solid rgb(196, 132, 13);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    box-shadow: 1px 20px 20px -20px black;
+}
+input[type=submit]:hover{
+    background-color: rgb(196, 132, 13);
+    transition-duration: .2s;
+    color: white;
+}
+.footer-info{
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    line-height: 1.5;
+}
+footer{
+    background-color: black;
+    text-align: center;
+}
+footer p{
+    color: white;
+    padding-bottom: 1rem;
+}
+.wrap {
+    min-height:calc(100vh - 156px);
+  }
+@media (min-width: 768px) {
+    .wrap {
+      min-height:calc(100vh - 156px);
+    }
+}
+
+/* 
+
+
+Pet Registration
+
+
+*/
+
+#main{
+    border: 1px solid lightgray;
+    padding: 4rem;
+    box-shadow: 1px 2px 8px -5px rgb(43, 43, 43);
+    margin-top: 2rem;
+    background-image: none;
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: 3% 50%;
+    background-size: 15%;
+
+}
+form{
+    text-align: center;
+}
+#main input{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    padding: .3rem .5rem;
+    width: 18.5rem;
+    border-radius: .4rem;
+    border: 1px solid black;
+}
+select{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    width: 18.5rem;
+    height: 2.2rem;
+    padding: .3rem 0;
+    border-radius: .4rem;
+    color:  black;
+
+}
+#main label{
+    display: none;
+}
+.petRegistration{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    margin-left: .1rem;
+    margin-right: .1rem;
+}
+
+.register-button input[type=button]{
+    
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 3rem;
+    background-color: #f5f5f5;
+
+}
+input[type=button]:hover{
+    background-color: rgb(167, 167, 167);
+    transition-duration: .2s;
+    color: white;
+}
+.form-head h3{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+.form-size-wrap{
+    max-width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media(min-width: 768px){
+#main{
+    border: 1px solid lightgray;
+    padding: 4rem;
+    box-shadow: 1px 8px 10px -5px rgb(43, 43, 43);
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+    background-image: url(../img/pawz.png);
+    background-repeat: repeat-y;
+    background-size: contain;
+    background-position: 10% 50%;
+    background-size: 15%;
+
+}
+form{
+    text-align: center;
+}
+#main input{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    padding: .3rem .5rem;
+    width: 18.5rem;
+    border-radius: .4rem;
+    border: 1px solid black;
+}
+select{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    width: 18.5rem;
+    height: 2.5rem;
+    padding: .3rem 0;
+    border-radius: .4rem;
+    color:  black;
+
+}
+#main label{
+    display: none;
+}
+.petRegistration{
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+}
+.form-size-wrap{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.register-button input[type=button]{
+    
+    border-radius: .4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 3rem;
+    background-color: #f5f5f5;
+
+}
+input[type=button]:hover{
+    background-color: rgb(167, 167, 167);
+    transition-duration: .2s;
+    color: white;
+}
+.form-head h3{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+}
+}
+
+
+/*
+
+
+
+About main section
+
+
+
+*/
+
+#about-main{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 1rem;
+    max-width: 1095px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+img{
+    max-width: 100%;
+}
+.student{
+    text-align: center;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+@media(max-width: 769px){
+    #pets-section-header{
+    
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 700;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+
+    .num-of-pets-wrap{
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        max-width: 360px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .num-of-pets-wrap p{
+        display: inline-block;
+        position: absolute;
+        padding: .8rem 1rem;
+        width: 100px;
+        height: 100px;
+        color: white;
+        font-size: 4rem;
+        text-shadow: 2px 2px black;
+        text-align: center;
+        margin-left: -3.2rem;
+        margin-top: -2.5rem;
+    }
+
+
+    .num-of-pets-wrap img{
+        position: absolute;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        padding: .5rem;
+        background-color: rgb(243, 188, 87);
+        margin-left: -3.1rem;
+        margin-top: -2.5rem;
+    }
+    #pets-section{
+    
+        display: grid;
+        grid-template-columns: 50% 50%;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7rem;
+        margin-bottom: 1rem;
+    }
+    .pet-info h2{
+        text-align: center;
+    }
+    .pet-info{
+    
+        text-align: justify;
+        border: 1px solid #dedede;
+        box-shadow: 1px 1px 10px -8px black;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        line-height: 1.5;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: .8rem;
+        
+    }
+    .newCustomer{
+        display: inline-block;
+        color: black;
+    }
+    .pet-info img{
+        display:block;
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+@media(min-width: 768px){
+
+    #about-main{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        column-gap: 1rem;
+        max-width: 1095px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    img{
+        max-width: 100%;
+    }
+    .student{
+        text-align: center;
+        border: 1px solid #dedede;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+    }
+    
+    #pets-section-header{
+    
+        font-size: 3rem;
+        font-weight: 700;
+        max-width: 1095px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .num-of-pets-wrap{
+        display: inline-block;
+        position: relative;
+        padding: 4rem;
+    }
+
+    .num-of-pets-wrap p{
+        display: inline-block;
+        position: absolute;
+        padding: .8rem 1rem;
+        width: 100px;
+        height: 100px;
+        color: white;
+        font-size: 4rem;
+        text-shadow: 2px 2px black;
+        margin-left: -3rem;
+        margin-top: -2rem;
+    }
+
+
+    .num-of-pets-wrap img{
+        position: absolute;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        padding: .5rem;
+        background-color: rgb(243, 188, 87);
+        margin-left: -3rem;
+        margin-top: -1.5rem;
+    }
+    #pets-section{
+    
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        column-gap: .2rem;
+        max-width: 1095px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .pet-info h2{
+        text-align: center;
+    }
+    .pet-info{
+    
+        text-align: justify;
+        border: 1px solid #dedede;
+        box-shadow: 1px 1px 10px -8px black;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        line-height: 1.5;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    .newCustomer{
+        display: inline-block;
+        color: black;
+    }
+    .pet-info img{
+        display:block;
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+    #logo{
+
+        margin-top: 2rem;
+    }
+    .highlight{
+        background-color: rgb(243, 188, 87);
+    }
+
+}
+.bordered{
+    border-bottom: 2px solid rgb(243, 188, 87);
+}
+.table-container{
+    margin-top: 1rem;
+}
+
+.red-BG{
+    background-color: red;
+}
+.form-inline{
+    margin-top: 5rem;
+
+}
+.active{
+    border-left: 3px solid rgb(196, 132, 13);
+}
