@@ -99,7 +99,7 @@ function clear(){
 
 
 function numberOfPets(){
-    const numEachPet = salon.pets;
+    var numEachPet = salon.pets;
     
     //Cat
     const filterCat = numEachPet.filter(function(numEachCat) {
@@ -143,23 +143,6 @@ function numberOfPets(){
 
   // Homework is function searchPet - two different element searches
 
-function searchPet(){
-
-    let ss= $("#petSearch").val(); // val = value
-    let stringSearch = ss.toLowerCase();
-    let pets=salon.pets;
-
-    for(var i=0;i<pets.length;i++){
-        let selected=pets[i];
-        if(selected.petName.toLowerCase() === stringSearch || selected.type.toLowerCase() === stringSearch || selected.service.toLowerCase() === stringSearch){
-            $("#"+selected.id).removeClass("active").addClass("active");
-        }else{
-            $("#"+selected.id).removeClass("active");
-            console.log("That pet is not in the system.");
-        }
-    }
-}
-searchPet();
 
 
 function displayTable(aPet){
@@ -175,19 +158,10 @@ function displayTable(aPet){
                 <td>${aPet.contactPhone}</td>
                 <td>${aPet.customerType}</td>
                 <td><button type="button" class="btn btn-danger" onclick="deletePet(${aPet.id})">Delete</button></td>
-            `;
+            </tr>`;
     tbody.innerHTML+=row;
-
     numberOfPets();
-    
 }
-//add pets to array
-
-displayTable(scooby);
-displayTable(scrappy);
-displayTable(lady);
-displayTable(tramp);
-displayTable(cali);
 
 
 function deletePet(petID){
@@ -207,4 +181,34 @@ function deletePet(petID){
     tr.remove();
     numberOfPets();
 }
+
+function searchPet(){
+
+    let ss= $("#petSearch").val(); // val = value
+    let stringSearch = ss.toLowerCase();
+    let pets=salon.pets;
+
+    for(var i=0;i<pets.length;i++){
+        let selected=pets[i];
+        if(selected.petName.toLowerCase() === stringSearch || selected.type.toLowerCase() === stringSearch || selected.service.toLowerCase() === stringSearch){
+            $("#"+selected.id).removeClass("active").addClass("active");
+        }else{
+            $("#"+selected.id).removeClass("active");
+            console.log("That pet is not in the system.");
+        }
+    }
+}
+searchPet();
+
+//add pets to array
+function init(){
+
+    displayTable(scooby);
+    displayTable(scrappy);
+    displayTable(lady);
+    displayTable(tramp);
+    displayTable(cali);
+    
+}
+window.onload = init;
 

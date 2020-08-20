@@ -1,12 +1,11 @@
-$(function(){
-    "use strict";
-    console.log("Ready to work!");
+function init(){
 
     $(".nail-cutting").hide();
     $(".shots").hide();
     $(".declawing").hide();
     $(".fixing").hide();
     $(".full-service").hide();
+    $("#groom").addClass("bordered");
 
     $("#groom").on("click", function(){
         $("#full-service").removeClass("bordered");
@@ -94,6 +93,9 @@ $(function(){
         $(".fixing").hide();
         
     })
+    $(".button").on("click", function(){
+        $("main").load("../register.html");
+    });
 
     // Delete pets from the registered table
 
@@ -106,7 +108,11 @@ $(function(){
     // $("section nav.menu2 a").on("click", function(event){
     //     $(this).addClass("bordered");
     // })
-})
+}
+
+// when the browser finishes creating DOM elements, call this function
+// window.onload = init;
+$(document).ready(()=>init());
 
 
 

@@ -90,8 +90,14 @@ nav{
         font-size: 1.3rem;
         padding: 1rem;
     }
+    #menu2 a:hover{
+        color: rgb(122, 122, 122);
+    }
 }
 .menu a:hover{
+    color: rgb(122, 122, 122);
+}
+.menu2 a:hover{
     color: rgb(122, 122, 122);
 }
 .need-groomed-wrap{
@@ -489,6 +495,13 @@ img{
     font-size: 1.2rem;
     font-weight: 400;
 }
+#footer{
+    color: white;
+    padding: 1.5rem 0;
+}
+#footer span{
+    line-height: 2;
+}
 }
 .button{
 
@@ -528,7 +541,6 @@ input[type=submit]:hover{
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: white;
-    line-height: 1.5;
 }
 footer{
     background-color: black;
@@ -543,7 +555,7 @@ footer p{
   }
 @media (min-width: 768px) {
     .wrap {
-      min-height:calc(100vh - 156px);
+      min-height:calc(100vh - 100px);
     }
 }
 
@@ -964,4 +976,8 @@ img{
 }
 .active{
     border-left: 3px solid rgb(196, 132, 13);
+}
+#map{
+    width: 500px;
+    height: 500px;
 }

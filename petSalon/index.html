@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -12,35 +13,39 @@
 <body>
     <div class="wrap">
     <header>
-        <img id= "logo" src="img/catDog.png" alt="">
         <h1>The Fashion Pet</h1>
     </header>
 
     <section>
         <nav class="menu">
             <a id="index" href="index.html">Home</a>
-            <a id="about">About</a>
-            <a id="services">Services</a>
-            <a id="register">Register</a>
+            <a id="about" href="#">About</a>
+            <a id="services" href="#">Services</a>
+            <a id="register" href="#">Register</a>
         </nav>
     </section>
     <main>
-        
+        <div id="map">
+
+        </div>
     </main>
 </div>
-    <footer>
+    <footer id="footer">
         <div id="info">
             
         </div>
-        <p>Copyright &copy Mike Sadler 2020</p>
+        <span>The Fashion Pet</span><br>
+        <span>777-777-7777</span><br>
+        <span>202 South Lane, Springfield</span><br>
+            <span>Copyright &copy Mike Sadler 2020</span>
     </footer>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="js/register.js"></script>
-   <script src="js/script.js"></script> 
+   <!-- <script src="js/script.js"></script>  -->
    <script src="js/app.js"></script>
    <script src="js/test9.js"></script>
-   <script src="js/jquery.js"></script>
+   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+   <script src="js/map.js"></script>
 
 </body>
 </html>

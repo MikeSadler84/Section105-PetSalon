@@ -58,6 +58,15 @@
                 </select>
             </p>
             <p>
+                <label for="hairLength">Hair Length: </label>
+                <select name="hairLength" id="hairLength">
+                    <option value="" disabled selected> -------- Select Hair Length -------- </option>
+                    <option value="Buzzed">Buzzed</option>
+                    <option value="Trim">Trim</option>
+                    <option value="Wing-clip">Wing-clip</option>
+                </select>
+            </p>
+            <p>
                 <label for="ownerName">Owner name: </label>
                 <input type="text" name="ownerName" id="ownerName" placeholder="Owner Name">
             </p>
@@ -74,7 +83,7 @@
                 </select>
             </p>
             <div class="register-button">
-            <input type="button" value="Register" onclick="register();">
+            <input id="register-btn" type="button" value="Register">
             </div>
         </form>
     </main>
@@ -92,33 +101,30 @@
     </section>
 
     <section class="container table-container">
-    <table class="table">
-        <thead>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Breed</th>
-            <th>Type</th>
-            <th>Gender</th>
-            <th>Service</th>
-            <th>Owner Name</th>
-            <th>Phone Number</th>
-            <th>Customer Status</th>
-        </thead>
-        <tbody id="petTable">
+        <table class="table">
+            <thead>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Breed</th>
+                <th>Type</th>
+                <th>Gender</th>
+                <th>Service</th>
+                <th>Hair Length</th>
+                <th>Owner Name</th>
+                <th>Phone Number</th>
+                <th>Customer Status</th>
+            </thead>
+            <tbody id="petTable">
 
-        </tbody>
-    </table>
-</section>
+            </tbody>
+        </table>
+    </section>
     <div id="msg">
 
     </div>
 </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/register.js"></script>
-
-   <!-- <script src="js/directory.js"></script> -->
-   <!-- <script src="js/test5.js"></script> -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>
