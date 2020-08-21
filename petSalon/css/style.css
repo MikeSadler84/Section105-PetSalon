@@ -495,12 +495,10 @@ img{
     font-size: 1.2rem;
     font-weight: 400;
 }
-#footer{
+#footer p{
     color: white;
-    padding: 1.5rem 0;
-}
-#footer span{
     line-height: 2;
+    padding: 1.5rem 0;
 }
 }
 .button{
@@ -555,7 +553,7 @@ footer p{
   }
 @media (min-width: 768px) {
     .wrap {
-      min-height:calc(100vh - 100px);
+      min-height:calc(100vh - 176px);
     }
 }
 
@@ -660,6 +658,9 @@ input[type=button]:hover{
     background-position: 10% 50%;
     background-size: 15%;
 
+}
+.img-wheel{
+    width:100%;
 }
 form{
     text-align: center;
@@ -965,6 +966,7 @@ img{
 }
 .table-container{
     margin-top: 1rem;
+    margin-bottom: 3rem;
 }
 
 .red-BG{
@@ -974,10 +976,27 @@ img{
     margin-top: 5rem;
 
 }
-.active{
+.actives{
     border-left: 3px solid rgb(196, 132, 13);
 }
 #map{
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
+    margin: 3rem auto;
+    border: 5px solid rgb(243, 188, 87);
+}
+#carouselExampleControls{
+    max-width: 500px;
+    margin: 5rem auto;
+    border: 4px solid rgb(196, 132, 13);
+}
+.about{
+    text-align: center;
+    max-width: 800px;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about h2{
+    margin-bottom: 1.5rem;
 }
