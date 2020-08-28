@@ -1,4 +1,5 @@
-function init(){
+
+function initServices(){
 
     $(".nail-cutting").hide();
     $(".shots").hide();
@@ -94,7 +95,9 @@ function init(){
         
     })
     $(".button").on("click", function(){
-        $("main").load("../register.html");
+        $("main").load("../register.html", function(){
+            if (initRegister) initRegister();
+        });
     });
 
     // Delete pets from the registered table
@@ -108,11 +111,13 @@ function init(){
     // $("section nav.menu2 a").on("click", function(event){
     //     $(this).addClass("bordered");
     // })
+
+
 }
 
 // when the browser finishes creating DOM elements, call this function
 // window.onload = init;
-$(document).ready(()=>init());
+// $(document).ready(()=>initServices());
 
 
 

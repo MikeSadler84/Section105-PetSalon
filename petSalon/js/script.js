@@ -11,7 +11,7 @@ const salon={
 }
 
 let {name, phone, address:{city,street,number}}= salon;
-
+console.log("script");
 // document.getElementById("info").innerHTML=`
 //     <p class="footer-info"> ${name}<br> ${phone}<br> ${number} ${street}, ${city}`; //template string
 
@@ -58,23 +58,31 @@ console.log(salon.pets.length);
 
 //register function and use ids
 
-let pettxt = document.getElementById("petName");
-let agetxt = document.getElementById("petAge");
-let breedtxt = document.getElementById("petBreed");
-let typetxt = document.getElementById("petType");
-let gendertxt = document.getElementById("petGender");
-let servicetxt = document.getElementById("petService");
-let hairtxt = document.getElementById("hairLength");
-let ownertxt = document.getElementById("ownerName");
-let phonetxt = document.getElementById("phoneNumber");
-let customertxt = document.getElementById("customerType");
+
+/*
+
+The below commented code was stopping the register from working. 
+Using JQuery instead fixed the issues
+
+*/
+
+// let pettxt = document.getElementById("petName");
+// let agetxt = document.getElementById("petAge");
+// let breedtxt = document.getElementById("petBreed");
+// let typetxt = document.getElementById("petType");
+// let gendertxt = document.getElementById("petGender");
+// let servicetxt = document.getElementById("petService");
+// let hairtxt = document.getElementById("hairLength");
+// let ownertxt = document.getElementById("ownerName");
+// let phonetxt = document.getElementById("phoneNumber");
+// let customertxt = document.getElementById("customerType");
 
 // Register function
 
 function register(){
 
     //create the pet object
-    const petNew=new Pet(pettxt.value, agetxt.value, breedtxt.value, typetxt.value, gendertxt.value, servicetxt.value, hairtxt.value, ownertxt.value, phonetxt.value, customertxt.value);
+    const petNew=new Pet($("#petName").val(), $("#petAge").val(), $("#petBreed").val(), $("#petType").val(), $("#petGender").val(), $("#petService").val(), $("#hairLength").val(), $("#ownerName").val(), $("#phoneNumber").val(), $("#customerType").val());
     //push the pet into the array
     salon.pets.push(petNew);
     console.log(salon.pets);
@@ -88,16 +96,16 @@ function register(){
 }
 
 function clear(){
-    pettxt.value="";
-    agetxt.value="";
-    breedtxt.value="";
-    typetxt.value="";
-    gendertxt.value="";
-    servicetxt.value="";
-    hairtxt.value="";
-    ownertxt.value="";
-    phonetxt.value="";
-    customertxt.value="";
+    $("#petName").val("");
+    $("#petAge").val("");
+    $("#petBreed").val("");
+    $("#petType").val("");
+    $("#petGender").val("");
+    $("#petService").val("");
+    $("#hairLength").val("");
+    $("#ownerName").val("");
+    $("#phoneNumber").val("");
+    $("#customerType").val("");
 }
 
 /*
@@ -109,19 +117,19 @@ Otherwise the prompt is hidden
 
 */
 
-$(function(){
-    "use strict";
+// $(function(){
+//     "use strict";
 
-    $("#hairLength").hide();
+//     $("#hairLength").hide();
 
-    $("#petService").click(function(){
-    if ($(this).val() === "Grooming" || $(this).val() === "Full Service"){
-        $("#hairLength").show();
-    }else{
-        $("#hairLength").hide();
-    }
-});
-});
+//     $("#petService").click(function(){
+//     if ($(this).val() === "Grooming" || $(this).val() === "Full Service"){
+//         $("#hairLength").show();
+//     }else{
+//         $("#hairLength").hide();
+//     }
+// });
+// });
 
 
 function numberOfPets(){
@@ -165,10 +173,9 @@ function numberOfPets(){
     numberOfPets.innerHTML= text;
   
   }
-  numberOfPets();
+  
 
   // Homework is function searchPet - two different element searches
-
 
 
 function displayTable(aPet){
@@ -188,6 +195,7 @@ function displayTable(aPet){
             </tr>`;
     tbody.innerHTML+=row;
     numberOfPets();
+    
 }
 
 
@@ -219,26 +227,27 @@ function searchPet(){
         let selected=pets[i];
         console.log(selected);
         if(selected.petName.toLowerCase() === stringSearch || selected.type.toLowerCase() === stringSearch || selected.service.toLowerCase() === stringSearch){
-            $(`#${selected.id}`).removeClass("active").addClass("active");
+            $(`#${selected.id}`).removeClass("actives").addClass("actives");
         }
         else{
-            $(`#${selected.id}`).removeClass("active");
+            $(`#${selected.id}`).removeClass("actives");
             
         }
     }
 }
-searchPet();
+
 
 //add pets to array
 // will be called automatically when all the HTML is rendered
-function init(){
-
+function initRegister(){
+    console.log("init register")
     displayTable(scooby);
     displayTable(scrappy);
     displayTable(lady);
     displayTable(tramp);
     displayTable(cali);
-
+    numberOfPets();
+    searchPet();
     $("#register-btn").click(register);
     $("#customerType").keypress(function(e){
         console.log(e.key);
@@ -247,12 +256,21 @@ function init(){
             register();
         }
     });
+    $("#hairLength").hide();
+
+    $("#petService").click(function(){
+    if ($(this).val() === "Grooming" || $(this).val() === "Full Service"){
+        $("#hairLength").show();
+    }else{
+        $("#hairLength").hide();
+    }
+});
     
 }
 
 // when the browser finishes creating DOM elements, call this function
 // window.onload = init;
-$(document).ready(()=>init());
+// $(document).ready(()=>initRegister());
 
 
 
