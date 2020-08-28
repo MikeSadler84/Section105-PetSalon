@@ -178,24 +178,51 @@ function numberOfPets(){
   // Homework is function searchPet - two different element searches
 
 
-function displayTable(aPet){
+// function displayTable(aPet){
+//     let tbody=document.getElementById("petTable");
+//     let row=`<tr id="${aPet.id}">
+//                 <td>${aPet.petName}</td>
+//                 <td>${aPet.age}</td>
+//                 <td>${aPet.breed}</td>
+//                 <td>${aPet.type}</td>
+//                 <td>${aPet.gender}</td>
+//                 <td>${aPet.service}</td>
+//                 <td>${aPet.hairLength}</td>
+//                 <td>${aPet.ownerName}</td>
+//                 <td>${aPet.contactPhone}</td>
+//                 <td>${aPet.customerType}</td>
+//                 <td><button type="button" class="btn btn-danger" onclick="deletePet(${aPet.id})">Delete</button></td>
+//             </tr>`;
+//     tbody.innerHTML+=row;
+//     numberOfPets();
+    
+// }
+
+function displayTable(){
     let tbody=document.getElementById("petTable");
-    let row=`<tr id="${aPet.id}">
+    let aPet;
+    let table="";
+    let row;
+    for(var i=0;i<salon.pets.length;i++){
+        aPet=salon.pets[i];
+        row = `<tr id="${aPet.id}">
                 <td>${aPet.petName}</td>
                 <td>${aPet.age}</td>
                 <td>${aPet.breed}</td>
                 <td>${aPet.type}</td>
                 <td>${aPet.gender}</td>
                 <td>${aPet.service}</td>
-                <td>${aPet.hairLength}</td>
                 <td>${aPet.ownerName}</td>
                 <td>${aPet.contactPhone}</td>
                 <td>${aPet.customerType}</td>
                 <td><button type="button" class="btn btn-danger" onclick="deletePet(${aPet.id})">Delete</button></td>
             </tr>`;
-    tbody.innerHTML+=row;
+            
+        table+=row;
+    }
+    tbody.innerHTML=table;
+    console.log(table);
     numberOfPets();
-    
 }
 
 
@@ -241,11 +268,12 @@ function searchPet(){
 // will be called automatically when all the HTML is rendered
 function initRegister(){
     console.log("init register")
-    displayTable(scooby);
-    displayTable(scrappy);
-    displayTable(lady);
-    displayTable(tramp);
-    displayTable(cali);
+    // displayTable(scooby);
+    // displayTable(scrappy);
+    // displayTable(lady);
+    // displayTable(tramp);
+    // displayTable(cali);
+    displayTable();
     numberOfPets();
     searchPet();
     $("#register-btn").click(register);
