@@ -544,6 +544,7 @@ input[type=submit]:hover{
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: white;
+    margin-bottom: -1rem;
 }
 footer{
     background-color: black;
