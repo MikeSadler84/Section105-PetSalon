@@ -249,6 +249,11 @@ function initRegister(){
     numberOfPets();
     searchPet();
     $("#register-btn").click(register);
+    $("#petSearch").keypress(function(e){
+        if(e.key === "Enter"){
+            searchPet();
+        }
+    });
     $("#customerType").keypress(function(e){
         console.log(e.key);
         if(e.key === "Enter"){
